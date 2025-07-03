@@ -49,40 +49,46 @@
             </div>
         </section>
 
-        <!-- =================== FORMULARIO CONTACTO =================== -->
-         
-<section id="contacto" class="my-5">
-  <h2 class="mb-4">Contáctanos</h2>
-  <form class="row g-3 needs-validation" novalidate>
-    <div class="col-md-6">
-      <label for="nombre" class="form-label">Nombre</label>
-      <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
-      <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
-    </div>
-    <div class="col-md-6">
-      <label for="email" class="form-label">Correo electrónico</label>
-      <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@correo.com" required>
-      <div class="invalid-feedback">Por favor ingresa un correo válido.</div>
-    </div>
-    <div class="col-12">
-      <label for="servicio" class="form-label">Servicio solicitado</label>
-      <select class="form-select" id="servicio" name="servicio" required>
-        <option value="" disabled selected class="d-none">Selecciona un servicio</option>
-        <option value="cambio-aceite">Cambio de aceite</option>
-        <option value="revision-frenos">Alineación de 4 ruedas</option>
-        <option value="diagnostico-electrico">Scanner eléctrico</option>
-      </select>
-      <div class="invalid-feedback">Selecciona un servicio.</div>
-    </div>
-    <div class="col-12">
-      <label for="mensaje" class="form-label">Mensaje</label>
-      <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escribe aquí tus dudas o consultas"></textarea>
-    </div>
-    <div class="col-12">
-      <button type="submit" class="btn btn-primary">Enviar</button>
-    </div>
-  </form>
-</section>
+        <!-- =================== FORMULARIO CONTACTO =================== -->   
+        <section id="contacto" class="my-5">
+          <h2 class="mb-4">Solicitar Reparación</h2>
+          <form id="formContacto" class="row g-3 needs-validation" novalidate>
+            <div class="col-md-6">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+              <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@correo.com" required>
+              <div class="invalid-feedback">Por favor ingresa un correo válido.</div>
+            </div>
+            <div class="col-12">
+              <label for="servicio" class="form-label">Tipo de Reparación</label>
+              <select class="form-select" id="servicio" name="servicio" required>
+                <option value="" disabled selected class="d-none">Selecciona un servicio</option>
+                <option value="cambio-aceite">Cambio de aceite</option>
+                <option value="revision-frenos">Revisión de frenos</option>
+                <option value="diagnostico-electrico">Diagnóstico eléctrico</option>
+              </select>
+              <div class="invalid-feedback">Selecciona un servicio.</div>
+            </div>
+            <div class="col-12">
+              <label for="descripcion" class="form-label">Descripción</label>
+              <textarea class="form-control" id="descripcion" name="descripcion" rows="4" placeholder="Escribe aquí la descripción del problema"></textarea>
+            </div>
+            <div class="col-12">
+              <label for="cita" class="form-label">Agendar cita</label>
+              <input type="datetime-local" class="form-control" id="cita" name="cita" required>
+            </div>
+            <hr class="my-4">
+            <h4 class="mb-3">Información de pago (simulado)</h4>
+            <!-- AGREGAR INFO PAGO -->
+            <div class="col-12">
+              <button type="submit" class="btn btn-success">Confirmar Solicitud</button>
+            </div>
+          </form>
+        </section>
     </main>
     <!-- =================== FOOTER =================== -->
     <footer class="container text-center mt-5">
