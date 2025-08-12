@@ -83,7 +83,25 @@
             </div>
             <hr class="my-4">
             <h4 class="mb-3">Información de pago (simulado)</h4>
-            <!-- AGREGAR INFO PAGO -->
+            <!-- Número de tarjeta -->
+            <div class="col-12">
+              <label for="tarjeta" class="form-label">Número de tarjeta</label>
+              <!-- Solo permite números y espacios, con longitud entre 16 y 19 caracteres -->
+              <input type="text" inputmode="numeric" pattern="[0-9\s]{16,19}" maxlength="19" class="form-control" id="tarjeta" placeholder="XXXX XXXX XXXX XXXX" required>
+            </div>
+
+            <!-- Nombre del titular -->
+            <div class="col-12">
+              <label for="titular" class="form-label">Nombre del titular</label>
+              <input type="text" class="form-control" id="titular" placeholder="Nombre como aparece en la tarjeta" required>
+            </div>
+
+            <!-- CVV -->
+            <div class="col-12">
+              <label for="cvv" class="form-label">CVV</label>
+              <!-- Solo permite entre 3 dígitos numéricos -->
+              <input type="text" inputmode="numeric" pattern="[0-9]{3}" maxlength="3" class="form-control" id="cvv" placeholder="Ej: 123" required>
+            </div>
             <div class="col-12">
               <button type="submit" class="btn btn-success">Confirmar Solicitud</button>
             </div>
